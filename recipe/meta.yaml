@@ -1,5 +1,5 @@
 {% set name = "tmtools" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/tmtools-{{ version }}.tar.gz
-  sha256: e2d6422f5af91ee41753fb2e9776140785eb818ec83d7aef8a8b2f296f05e72c
+  sha256: 06010d6c2b6272f19b86e6260ce9f3175f3b601fba46520d57a5fa3ce1d4761d
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 2
+  number: 0
 
 requirements:
   build:
